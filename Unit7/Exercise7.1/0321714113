@@ -1,0 +1,656 @@
+<!DOCTYPE html><!--[if lt IE 7]><html class="no-js lt-ie9 lt-ie8 lt-ie7" xsl="http://www.w3.org/1999/XSL/Transform xmlns:fb="http://www.facebook.com/2008/fbml""><![endif]--><!--[if IE 7]><html class="no-js lt-ie9 lt-ie8" xsl="http://www.w3.org/1999/XSL/Transform xmlns:fb="http://www.facebook.com/2008/fbml""> <![endif]--><!--[if IE 8]><html class="no-js lt-ie9" xsl="http://www.w3.org/1999/XSL/Transform" xmlns:fb="http://www.facebook.com/2008/fbml"><![endif]--><!--[if gt IE 8]><!--><html class="no-js" xsl="http://www.w3.org/1999/XSL/Transform" xmlns:fb="http://www.facebook.com/2008/fbml" xmlns:scr="urn:scr.this"><!--<![endif]--><head><meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" /><meta name="verify-v1" content="jKqgZt8qtZUt+IrazV2fydKUZG2KKR8QEUoYjH9tth4=" /><meta http-equiv="Content-Type" content="text/html; charset=utf-8" /><title>C++ Primer, 5th Edition | InformIT</title><link href="/display/InformIT/css/style-blessed1.css" rel="stylesheet" type="text/css" xmlns:msxsl="urn:schemas-microsoft-com:xslt" /><link href="/display/InformIT/css/style.css" rel="stylesheet" type="text/css" xmlns:msxsl="urn:schemas-microsoft-com:xslt" /><link href="/display/common/css/print.css" rel="stylesheet" media="print" type="text/css" xmlns:msxsl="urn:schemas-microsoft-com:xslt" /><link rel="apple-touch-icon-precomposed" sizes="144x144" href="/display/InformIT/images/objects/touch_icons/apple-touch-icon-144x144-precomposed.png" xmlns:msxsl="urn:schemas-microsoft-com:xslt" /><link rel="apple-touch-icon-precomposed" sizes="114x114" href="/display/InformIT/images/objects/touch_icons/apple-touch-icon-114x114-precomposed.png" xmlns:msxsl="urn:schemas-microsoft-com:xslt" /><link rel="apple-touch-icon-precomposed" sizes="72x72" href="/display/InformIT/images/objects/touch_icons/apple-touch-icon-72x72-precomposed.png" xmlns:msxsl="urn:schemas-microsoft-com:xslt" /><link rel="apple-touch-icon-precomposed" href="/display/InformIT/images/objects/touch_icons/apple-touch-icon-precomposed.png" xmlns:msxsl="urn:schemas-microsoft-com:xslt" /><script src="//assets.adobedtm.com/cb849396793dda3fc498b86555fddd5a2d245f6c/satelliteLib-34fea3c356e1d487f7d10ec820ed37ed3d41be4f.js" xmlns:msxsl="urn:schemas-microsoft-com:xslt"></script><script language="JavaScript" src="/display/common/javascript/modernizr.custom.js?v=20141110" type="text/javascript" xmlns:msxsl="urn:schemas-microsoft-com:xslt"></script><script language="JavaScript" src="/display/common/javascript/jquery.js?v=20141110" type="text/JavaScript" xmlns:msxsl="urn:schemas-microsoft-com:xslt"></script><script language="JavaScript" src="/display/common/javascript/global.js?v=20141110" type="text/JavaScript" xmlns:msxsl="urn:schemas-microsoft-com:xslt"></script><!--[if lte IE 8]><script language="JavaScript" src="/display/common/javascript/respond.min.js" type="text/JavaScript"></script><![endif]--><script language="JavaScript" src="/display/common/javascript/swfobject.js" type="text/JavaScript" xmlns:msxsl="urn:schemas-microsoft-com:xslt"></script><script language="JavaScript" src="/display/common/javascript/jquery-ui-1.10.2.custom.min.js" type="text/JavaScript" xmlns:msxsl="urn:schemas-microsoft-com:xslt"></script><script language="JavaScript" src="/display/common/javascript/fastclick.min.js" type="text/JavaScript" xmlns:msxsl="urn:schemas-microsoft-com:xslt"></script><link rel="canonical" href="http://www.informit.com/store/c-plus-plus-primer-9780321714114" />
+            
+            
+        
+                <meta name="pageType" content="Product" />
+            <meta name="publishedDate" content="Aug 6, 2012" />
+                <meta name="description" content="Bestselling Programming Tutorial and Reference Completely Rewritten for the New C++11 Standard Now fully updated and recast for the newly released C++11 standard, this authoritative and comprehensive introduction to C++ will help you to learn the language fast, and to use it in modern, highly effective ways. Highlighting today&#39;s best practices, the authors show how to use both the core language and its standard library to write code that is more efficient, readable, and powerful." />
+            
+            
+            <meta name="viewport" content="width=device-width, initial-scale=1.0"><script type="text/javascript" id="SBOLoad" src="/display/common/javascript/SBOWidgets/pearson/SBOLoad.js?portal=informit"></script>
+        <link rel="shortcut icon" href="/display/InformIT/images/objects/favicon.ico?v=20141110" /><script xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+        (function(d) {
+        var e = d.createElement('script');
+        e.src = d.location.protocol + '//app.yieldify.com/yieldify/code.js?yieldify_id=1911&loca='+window.location.href;
+        e.async = true;
+        d.getElementsByTagName("head")[0].appendChild(e);
+        }(document));
+      </script><script xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+      (function() {
+          var _fbq = window._fbq || (window._fbq = []);
+          if (!_fbq.loaded) {
+              var fbds = document.createElement('script');
+              fbds.async = true;
+              fbds.src = '//connect.facebook.net/en_US/fbds.js';
+              var s = document.getElementsByTagName('script')[0];
+              s.parentNode.insertBefore(fbds, s);
+              _fbq.loaded = true;
+          }
+          _fbq.push(['addPixelId', '730048657068506']);
+      })();
+      
+      window._fbq = window._fbq || [];
+      window._fbq.push(['track', 'PixelInitialized', {}]);
+    </script><noscript xmlns:msxsl="urn:schemas-microsoft-com:xslt"><img height="1" width="1" alt="" style="display:none" src="https://www.facebook.com/tr?id=730048657068506&amp;ev=PixelInitialized" /></noscript></head><body class="r"><div class="wrapper">
+
+
+    <script type="text/javascript">var SBOWidget = new SBO.Ajax.Panel.Search();</script>
+
+
+
+<script type="text/javascript" src="/display/common/javascript/productpage.js?v=20140620"></script>
+
+
+<div id="rContent" class="content storeProduct nonVideoProduct clearfix">
+    <script type="text/javascript">
+        $(document).ready(function () {
+            if (window.getComputedStyle) {
+                $(".buckets-other, .copies, .wishlist, .book-extras, .product-buy-box, .append-bundles, #marketingDescription").appendAround();
+            }
+        });
+    </script>
+<p class="crumb">
+            <a href="/">Home</a>
+            &gt;
+            <a href="/store/index.aspx">Store</a>
+            &gt;
+            <a href="/store/index.aspx?st=60370">Programming</a>
+            &gt;
+            <a href="/store/index.aspx?st=60397">C/C++</a>
+</p>
+    <div id="columnOne" class="eleven columns alpha">
+        <div id="coverCol" class="four columns alpha">
+            <div class="product-cover">
+                    <span id="searchInsideButton">
+                        <a href="javascript:SBOWidget.Show('', SBOgetLeft('searchInsideButton'), SBOgetTop('searchInsideButton') + 12,' AND ISBN=9780321714114',1, 1, 10, 0, '', 1, 'single', 0); pageTracker._trackPageview('/onclick/SBOWidget-9780321714114');">
+                            <img id="SBOsearchImage" alt="widget" src="/display/InformIT/images/buttons/safari_search_inside.png" border="0" height="22" />
+                        </a>
+                    </span>
+                <a href="#largeCover" class="coverZoomOpener product-cover-image">
+                    <img src="/ShowCover.aspx?isbn=9780321714114&amp;type=f" alt="C++ Primer, 5th Edition" class="product" />
+                </a>
+                <p class="product-cover-image-link">
+                    <a href="#largeCover" class="coverZoomOpener">View Larger Image</a>
+                </p>
+            </div>
+            <div id="largeCover" class="dialogZoom product-cover-image-large">
+                <img src="/ShowCover.aspx?isbn=0321714113" alt="C++ Primer, 5th Edition" />
+            </div>
+            <div class="append-book-wish-list-wide" data-set="append-wish-list">
+                <a href="#addToWishList" class="wishlist gray button center jsLoadFrame dialogOpener">Add To My Wish List</a>
+                <div id="addToWishList" class="dialogBox" title="Add To My Wish List">
+                    <iframe id="wishListSrc" src="/my_account/addTo.aspx?p=28feb992-5d11-4166-970e-14cd91d215f2&t=w&redirectUrl=http://www.informit.com/store/c-plus-plus-primer-9780321714114&initialLoad=1"></iframe>
+                </div>
+            </div>
+            <div class="append-book-extras-wide" data-set="append-book-extras">
+                <div class="book-extras clearfix">
+
+<script type="text/javascript">
+	var addthis_config = { username: "informit", ui_cobrand: "InformIT" };
+	var addthis_share = {};
+</script>
+<div class="addthis_toolbox addthis_default_style">
+	<a onclick="return addthis_sendto('more');">
+		<span class="at15t_more">Share</span>
+	</a>
+	<span class="addthis_separator">|</span>
+	<div class="addthis_icons">
+		<a title="Tweet This" class="addthis_button_twitter at300b ss-social twitter">
+			<span class="at16nc at300bs at15nc at15t_twitter at16t_twitter"><span class="at_a11y">Share on twitter</span></span>&#xF611;
+		</a>
+		<a title="Share on Facebook" class="addthis_button_facebook at300b ss-social fb" target="_blank" href="//www.addthis.com/bookmark.php?pub=docs&amp;v=250&amp;source=tbx-250&amp;tt=0&amp;s=facebook&amp;url=http%3A%2F%2Fwww.addthis.com%2Fhelp%2Fcustomizing-addthis&amp;title=AddThis%20-%20Help%20-%20Customization%20Overview&amp;content=&amp;lng=en&amp;uid=492445fc58f29bf5"><span class="at16nc at300bs at15nc at15t_facebook at16t_facebook"><span class="at_a11y">Share on facebook</span></span>&#xF610;
+		</a>
+		<a title="Share on Google+" class="addthis_button_google_plusone_share at300b ss-social google" target="_blank" href="//www.addthis.com/bookmark.php?pub=docs&amp;v=250&amp;source=tbx-250&amp;tt=0&amp;s=google&amp;url=http%3A%2F%2Fwww.addthis.com%2Fhelp%2Fcustomizing-addthis&amp;title=AddThis%20-%20Help%20-%20Customization%20Overview&amp;content=&amp;lng=en&amp;uid=492445fc58f29bf5">
+			<span class="at16nc at300bs at15nc at15t_google at16t_google"><span class="at_a11y">Share on google</span></span>&#xF613;
+		</a>
+		<a title="Email" class="addthis_button_email at300b ss-social email">
+			<span class="at16nc at300bs at15nc at15t_email at16t_email"><span class="at_a11y">Share on email</span></span>&#x2709;
+		</a>
+	</div>
+</div>
+<script type="text/javascript" src="http://s7.addthis.com/js/250/addthis_widget.js"></script>
+                            <p class="register clearfix">
+                                <a href="/store/register.aspx?i=9780321714114">Register your product</a>
+                                to gain access to bonus material or receive a coupon.
+                            </p>
+                </div>
+            </div>
+        </div>
+        <div id="bibCol" class="twelve columns omega l-offset-half clearfix">
+            <h1>
+                C++ Primer, 5th Edition
+            </h1>
+            <div id="metaInformation">
+                <ul class="bibliography">
+                        <li>By <a rel="author" href="/authors/bio/ac171f5a-dfc6-43d1-bc4f-d8488c944125">Stanley B. Lippman</a>, <a rel="author" href="/authors/bio/8aaeadd9-5b91-43e8-95f6-470a0b12dfe9">Josée LaJoie</a>, <a rel="author" href="/authors/bio/764d4f1b-b868-4115-862e-4fe85e69f321">Barbara E. Moo</a></li>
+                    <li>
+                        Published Aug 6, 2012 by
+                            <a href="http://www.awprofessional.com/">Addison-Wesley Professional</a>.                                            </li>
+                </ul>
+                
+                <div class="append-book-extras-narrow" data-set="append-book-extras"></div>
+                <div class="append-book-wish-list-mid" data-set="append-wish-list"></div>
+            </div>
+
+            
+            <div class="append-book-buy-box-wide" data-set="append-book-buy-box">
+                <div id="childContainer" class="product-buy-box">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <h2>Best Value Purchase</h2>
+    <div class="buyOption uppBundle clearfix">
+            <h3>
+Book + eBook Bundle    </h3>
+    <ul class="uppPricing">
+                <li class="yours"><strong>Your Price: $67.59</strong></li>
+                    <li class="list">List Price: $115.98</li>
+                <li class="block">Includes EPUB, MOBI, and PDF</li>
+                <li class="block">
+                    <a href="#eFormatsInstructions" class="dialogOpener">About eBook Formats</a>
+                </li>
+    <div id="eFormatsInstructions" class="dialogBox" title="About eBook Formats">
+        <p class="zoomFormat">
+            This eBook includes the following formats, accessible from your <a href="/my_account/login.aspx?partner=53">Account</a> page after purchase:
+        </p>
+        <p class="zoomFormat">
+            <span class="zoomIcon">
+                <img src="/display/common/images/icons/epub_24.png" alt="ePub" />
+                <span class="format">EPUB</span>
+            </span>The open industry format known for its reflowable content and usability on supported mobile devices.
+        </p>
+        <p class="zoomFormat">
+            <span class="zoomIcon">
+                <img src="/display/common/images/icons/mobi_24.png" alt="MOBI" />
+                <span class="format">MOBI</span>
+            </span>The eBook format compatible with the Amazon Kindle and Amazon Kindle applications.
+        </p>
+        <p class="zoomFormat">
+            <span class="zoomIcon">
+                <img src="/display/common/images/icons/pdf_24.png" alt="Adobe Reader" />
+                <span class="format">PDF</span>
+            </span>The popular standard, used most often with the free <a href="http://www.adobe.com/downloads/updates/">Adobe&#174; Reader&#174;</a> software.
+        </p>
+        <p>This eBook requires no passwords or activation to read. We customize your eBook by discreetly watermarking it with your name, making it uniquely yours.</p>
+        <ul class="eFormatsLinks">
+            <li>
+                <a href="/store/faq_nondrm.aspx">Watermarked eBook FAQ</a>
+            </li>
+            <li>
+                <a href="/store/ebook-formats/">eBook Download Instructions</a>
+            </li>
+        </ul>
+    </div>
+    </ul>
+                        <div class="buyAction">
+                                        <a href="/buy.aspx?isbn=0321714113&amp;eb=685f2c33-a149-450b-b2a9-b8e7a17b9492" class="buy button productPurchase"><span class="ss-icon">&#xE500;</span>Add to cart</a>
+
+                                <p class="singlePrintOption">
+                                    <a href="/cart/ordering.aspx">FREE SHIPPING!</a>
+                                </p>
+                        </div>
+
+    </div>
+    <h2>More Purchase Options</h2>
+    <div class="buyOption clearfix">
+    <h3>
+Book    </h3>
+    <ul class="uppPricing">
+                <li class="yours"><strong>Your Price: $47.99</strong></li>
+                    <li class="list">List Price: $59.99</li>
+                    <li class="block">Usually ships in 24 hours.</li>
+    </ul>
+                        <div class="buyAction">
+                                    <a href="/buy.aspx?isbn=0321714113" class="buy button productPurchase"><span class="ss-icon">&#xE500;</span>Add to cart</a>
+
+                                <p class="singlePrintOption">
+                                    <a href="/cart/ordering.aspx">FREE SHIPPING!</a>
+                                </p>
+                        </div>
+    </div>
+
+    
+    
+                    <div class="buyOption clearfix">
+                    <h3>
+eBook (Watermarked)    </h3>
+    <ul class="uppPricing">
+                <li class="yours"><strong>Your Price: $44.79</strong></li>
+                    <li class="list">List Price: $55.99</li>
+                <li class="block">Includes EPUB, MOBI, and PDF</li>
+                <li class="block">
+                    <a href="#eFormatsInstructions" class="dialogOpener">About eBook Formats</a>
+                </li>
+    <div id="eFormatsInstructions" class="dialogBox" title="About eBook Formats">
+        <p class="zoomFormat">
+            This eBook includes the following formats, accessible from your <a href="/my_account/login.aspx?partner=53">Account</a> page after purchase:
+        </p>
+        <p class="zoomFormat">
+            <span class="zoomIcon">
+                <img src="/display/common/images/icons/epub_24.png" alt="ePub" />
+                <span class="format">EPUB</span>
+            </span>The open industry format known for its reflowable content and usability on supported mobile devices.
+        </p>
+        <p class="zoomFormat">
+            <span class="zoomIcon">
+                <img src="/display/common/images/icons/mobi_24.png" alt="MOBI" />
+                <span class="format">MOBI</span>
+            </span>The eBook format compatible with the Amazon Kindle and Amazon Kindle applications.
+        </p>
+        <p class="zoomFormat">
+            <span class="zoomIcon">
+                <img src="/display/common/images/icons/pdf_24.png" alt="Adobe Reader" />
+                <span class="format">PDF</span>
+            </span>The popular standard, used most often with the free <a href="http://www.adobe.com/downloads/updates/">Adobe&#174; Reader&#174;</a> software.
+        </p>
+        <p>This eBook requires no passwords or activation to read. We customize your eBook by discreetly watermarking it with your name, making it uniquely yours.</p>
+        <ul class="eFormatsLinks">
+            <li>
+                <a href="/store/faq_nondrm.aspx">Watermarked eBook FAQ</a>
+            </li>
+            <li>
+                <a href="/store/ebook-formats/">eBook Download Instructions</a>
+            </li>
+        </ul>
+    </div>
+    </ul>
+                        <div class="buyAction">
+                                    <a href="/buy.aspx?isbn=0133053059" class="buy button productPurchase"><span class="ss-icon">&#xE500;</span>Add to cart</a>
+
+                        </div>
+
+            </div>
+                                                
+
+
+
+
+                </div>
+            </div>
+            <div class="append-bundles-mid" data-set="append-bundles"></div>
+
+                <div class="append-marketing-wide" data-set="append-marketing">
+                    <div id="marketingDescription">
+                        <em>Read <a href="https://www.safaribooksonline.com/library/view/_/9780133053043/?utm_medium=referral&utm_campaign=publisher&utm_source=informit&utm_content=ptg+product+page">C++ Primer, 5th Edition</a> and get access to more than 24,000 other books and videos on Safari Books Online, a digital library providing on-demand subscription access to thousands of learning resources.
+
+<a href="https://www.safaribooksonline.com/library/view/_/9780133053043/?utm_medium=referral&utm_campaign=publisher&utm_source=informit&utm_content=ptg+product+page">Start  a free trial today</a>. 
+</em>
+                    </div>
+                </div>
+
+
+        </div>
+
+        
+        <div class="append-book-buy-box-narrow" data-set="append-book-buy-box"></div>
+        <div class="append-bundles-narrow" data-set="append-bundles"></div>
+        <div class="append-marketing-narrow" data-set="append-marketing"></div>
+
+
+
+
+<script type="text/javascript" src="/display/common/javascript/product_tabs.js"></script>
+
+<div id="productBSS" class="tabwidget">
+    <ul class="tab-accordion">
+    <li id="bssTab_5a515c2e-ad37-4b54-9126-a1aeca3e4dbe" class="tab-accordion-item">
+        <a id="info5a515c2e-ad37-4b54-9126-a1aeca3e4dbe" href="#bss5a515c2e-ad37-4b54-9126-a1aeca3e4dbe">
+            About
+        </a>
+    </li>
+    <script type="text/javascript">
+        tabArray.push('5a515c2e-ad37-4b54-9126-a1aeca3e4dbe');
+    </script>
+    <li id="bssTab_93f55b7e-b553-4a5e-8cef-199a361488c6" class="tab-accordion-item">
+        <a id="info93f55b7e-b553-4a5e-8cef-199a361488c6" href="#bss93f55b7e-b553-4a5e-8cef-199a361488c6">
+            Description
+        </a>
+    </li>
+    <script type="text/javascript">
+        tabArray.push('93f55b7e-b553-4a5e-8cef-199a361488c6');
+    </script>
+    <li id="bssTab_6773f413-100c-4ba8-a4a8-9325c9342776" class="tab-accordion-item">
+        <a id="info6773f413-100c-4ba8-a4a8-9325c9342776" href="#bss6773f413-100c-4ba8-a4a8-9325c9342776">
+            Downloads
+        </a>
+    </li>
+    <script type="text/javascript">
+        tabArray.push('6773f413-100c-4ba8-a4a8-9325c9342776');
+    </script>
+    <li id="bssTab_abdf9677-e379-441c-971a-046797ee36db" class="tab-accordion-item">
+        <a id="infoabdf9677-e379-441c-971a-046797ee36db" href="#bssabdf9677-e379-441c-971a-046797ee36db">
+            Extras
+        </a>
+    </li>
+    <script type="text/javascript">
+        tabArray.push('abdf9677-e379-441c-971a-046797ee36db');
+    </script>
+    <li id="bssTab_0f8fc8f7-6d8d-4816-9b68-458cbd7149e6" class="tab-accordion-item">
+        <a id="info0f8fc8f7-6d8d-4816-9b68-458cbd7149e6" href="#bss0f8fc8f7-6d8d-4816-9b68-458cbd7149e6">
+            Sample Content
+        </a>
+    </li>
+    <script type="text/javascript">
+        tabArray.push('0f8fc8f7-6d8d-4816-9b68-458cbd7149e6');
+    </script>
+    <li id="bssTab_5ee7e6a0-2896-4293-85db-a976142bac52" class="tab-accordion-item">
+        <a id="info5ee7e6a0-2896-4293-85db-a976142bac52" href="#bss5ee7e6a0-2896-4293-85db-a976142bac52">
+            Updates
+        </a>
+    </li>
+    <script type="text/javascript">
+        tabArray.push('5ee7e6a0-2896-4293-85db-a976142bac52');
+    </script>
+
+        <li id="bssTab_moreInformation" class="tab-accordion-item">
+        <a id="moreInformation" href="#bssmoreInformation">
+            More Information
+        </a>
+    </li>
+    </ul>
+</div>
+<div id="bssContent">
+        <div id="bss5a515c2e-ad37-4b54-9126-a1aeca3e4dbe" class-"bss-container">
+            <h2 class="tab-accordion-content-header">About</h2>
+                        <h3>Features</h3>
+        <p><UL>  <LI>A best-seller completely revised and rewritten for the new C++ 2011 standard </LI>  <LI>A favorite choice for a first C++ book--greatly improved and updated for modern C++ programming. </LI>  <LI>Reorganized to better address the novice audience, making it more approachable for non-C programmers.   <LI>Features many new examples that are less advanced and more accessible to novices as well as experienced programmers--folks who already use C++ need this book too.</LI></UL></p>
+                        <a href="#productBSS" class="ss-icon tab-accordion-content-return">&#xF500;</a>
+        </div>
+        <div id="bss93f55b7e-b553-4a5e-8cef-199a361488c6" class-"bss-container">
+            <h2 class="tab-accordion-content-header">Description</h2>
+
+<span id="bssMetaInformation" class="clearfix">
+    <ul id="bibPubInfo">
+        <li>Copyright 2013</li>
+                <li>Dimensions: 7&quot; x 9-1/8&quot;</li>
+                <li>Pages: 976</li>
+                <li>Edition: 5th</li>
+        </ul>
+        <ul id="bibISBN">
+        <li>
+            <strong>
+Book            </strong>
+        </li>
+        <li>ISBN-10: 0-321-71411-3</li>
+        <li class="bibIsbnLast">ISBN-13: 978-0-321-71411-4</li>
+    </ul>
+</span>
+
+        <p><B>Bestselling Programming Tutorial and Reference Completely Rewritten for the New C++11 Standard</B>     <P>Fully updated and recast for the newly released C++11 standard, this authoritative and comprehensive introduction to C++ will help you to learn the language fast, and to use it in modern, highly effective ways. Highlighting today&rsquo;s best practices, the authors show how to use both the core language and its standard library to write efficient, readable, and powerful code.</P>  <P><B></B></P>  <P><B><I>C++ Primer, Fifth Edition, </I></B>introduces the C++ standard library from the outset, drawing on its common functions and facilities to help you write useful programs without first having to master every language detail. The book&rsquo;s many examples have been revised to use the new language features and demonstrate how to make the best use of them. This book is a proven tutorial for those new to C++, an authoritative discussion of core C++ concepts and techniques, and a valuable resource for experienced programmers, especially those eager to see C++11 enhancements illuminated.</P>    <P>Start Fast and Achieve More</P>  <UL>  <LI>Learn how to use the new C++11 language features and the standard library to build robust programs quickly, and get comfortable with high-level programming   <LI>Learn through examples that illuminate today&rsquo;s best coding styles and program design techniques   <LI>Understand the &ldquo;rationale behind the rules&rdquo;: why C++11 works as it does   <LI>Use the extensive crossreferences to help you connect related concepts and insights   <LI>Benefit from up-to-date learning aids and exercises that emphasize key points, help you to avoid pitfalls, promote good practices, and reinforce what you&rsquo;ve learned</LI></UL>    <P><B>Access the source code for the extended examples from informit.com/title/0321714113</B></P>    <P><B><I>C++ Primer, Fifth Edition,</I></B> features an enhanced, layflat binding, which allows the book to stay open more easily when placed on a flat surface. This special binding method&mdash;notable by a small space inside the spine&mdash;also increases durability. </P>  </p>
+                                    <a href="#productBSS" class="ss-icon tab-accordion-content-return">&#xF500;</a>
+        </div>
+        <div id="bss6773f413-100c-4ba8-a4a8-9325c9342776" class-"bss-container">
+            <h2 class="tab-accordion-content-header">Downloads</h2>
+                        <h3>Downloads</h3>
+        <p><p>Download the source files for <a href="/content/images/9780321714114/downloads/GCC_4_7_0.zip">GCC 4.7.0.</a> </p>
+
+<p>Download the source code files for  <a href="/content/images/9780321714114/downloads/VisualStudio2012.zip">MS Visual Studio 2012</a> </p>
+
+<p>Download the source code files for <a href="/content/images/9780321714114/downloads/GCC_pre_C11.zip">GCC pre-C++ 11 compilers 2012</a>.</p>
+
+<p>Download the source code files for <a href="/content/images/9780321714114/downloads/MS_pre_C11.zip">Microsoft pre-C++ 11 compilers</a>.</p></p>
+                        <a href="#productBSS" class="ss-icon tab-accordion-content-return">&#xF500;</a>
+        </div>
+        <div id="bssabdf9677-e379-441c-971a-046797ee36db" class-"bss-container">
+            <h2 class="tab-accordion-content-header">Extras</h2>
+                    <h3>
+                            Related Articles
+                    </h3>
+                        <p>
+                            <a href="http://www.informit.com/articles/article.aspx?p=1967018">
+                                An Interview with Barbara Moo on C++11
+                            </a>
+                        </p>
+                        <p>
+                            <a href="http://www.informit.com/articles/article.aspx?p=1914190">
+                                Move Semantics in C++11, Part 1: A New Way of Thinking About Objects
+                            </a>
+                        </p>
+                                    <a href="#productBSS" class="ss-icon tab-accordion-content-return">&#xF500;</a>
+        </div>
+        <div id="bss0f8fc8f7-6d8d-4816-9b68-458cbd7149e6" class-"bss-container">
+            <h2 class="tab-accordion-content-header">Sample Content</h2>
+                    <h3>
+                            Online Sample Chapter 
+                    </h3>
+                        <p>
+                            <a href="http://www.informit.com/articles/article.aspx?p=1944072">
+                                Working with Dynamic Memory in C++
+                            </a>
+                        </p>
+                        <h3>Sample Pages</h3>
+        <p><p><a href="/content/images/9780321714114/samplepages/9780321714114.pdf">Download the sample pages</a> (includes Chapter 12 and Index)</p> </p>
+            <h3>Table of Contents</h3>
+        <p><b>Preface&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; xxiii</b> <p><b>Chapter 1: Getting Started&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1</b></p> <p>1.1 Writing a Simple C++ Program&nbsp;&nbsp; 2</p> <p>1.2 A First Look at Input/Output&nbsp;&nbsp; 5</p> <p>1.3 A Word About Comments&nbsp;&nbsp; 9</p> <p>1.4 Flow of Control&nbsp;&nbsp; 11</p> <p>1.5 Introducing Classes&nbsp;&nbsp; 19</p> <p>1.6 The Bookstore Program&nbsp;&nbsp; 24</p> <p>Chapter Summary&nbsp;&nbsp; 26</p> <p>Defined Terms&nbsp;&nbsp; 26</p>  <p><b>Part I: The Basics&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 29</b></p> <p><b>Chapter 2: Variables and Basic Types&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 31</b></p> <p>2.1 Primitive Built-in Types&nbsp;&nbsp; 32</p> <p>2.2 Variables&nbsp;&nbsp; 41</p> <p>2.3 Compound Types&nbsp;&nbsp; 50</p> <p>2.4 const Qualifier&nbsp;&nbsp; 59</p> <p>2.5 Dealing with Types&nbsp;&nbsp; 67</p> <p>2.6 Defining Our Own&nbsp; Data Structures&nbsp;&nbsp; 72</p> <p>Chapter Summary&nbsp;&nbsp; 78</p> <p>Defined Terms&nbsp;&nbsp;&nbsp; 78</p>  <p><b>Chapter 3: Strings, Vectors, and Arrays&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 81</b></p> <p>3.1 Namespace using Declarations&nbsp;&nbsp; 82</p> <p>3.2 Library string Type&nbsp;&nbsp; 84</p> <p>3.3 Library vector Type&nbsp;&nbsp; 96</p> <p>3.4 Introducing Iterators&nbsp;&nbsp;&nbsp; 106</p> <p>3.5 Arrays &nbsp;&nbsp;113</p> <p>3.6 Multidimensional Arrays&nbsp;&nbsp; 125</p> <p>Chapter Summary&nbsp;&nbsp; 131</p> <p>Defined Terms&nbsp;&nbsp; 131</p>  <p><b>Chapter 4: Expressions&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 133</b></p> <p>4.1 Fundamentals&nbsp;&nbsp;&nbsp; 134</p> <p>4.2 Arithmetic Operators&nbsp;&nbsp; 139</p> <p>4.3 Logical and Relational Operators&nbsp;&nbsp; 141</p> <p>4.4 Assignment Operators&nbsp;&nbsp; 144</p> <p>4.5 Increment and Decrement Operators&nbsp;&nbsp; 147</p> <p>4.6 The Member Access Operators&nbsp;&nbsp; 150</p> <p>4.7 The Conditional Operator&nbsp;&nbsp; 151</p> <p>4.8 The Bitwise Operators&nbsp;&nbsp; 152</p> <p>4.9 The sizeof Operator&nbsp;&nbsp; 156</p> <p>4.10 Comma Operator&nbsp;&nbsp;&nbsp; 157</p> <p>4.11 Type Conversions&nbsp;&nbsp; 159</p> <p>4.12 Operator Precedence Table&nbsp; &nbsp;166</p> <p>Chapter Summary&nbsp;&nbsp; 168</p> <p>Defined Terms&nbsp;&nbsp; 168</p> <p></p> <p><b>Chapter 5: Statements&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 171</b></p> <p>5.1 Simple Statements&nbsp;&nbsp; 172</p> <p>5.2 Statement Scope&nbsp;&nbsp; 174</p> <p>5.3 Conditional Statements&nbsp;&nbsp;&nbsp; 174</p> <p>5.4 Iterative Statements&nbsp;&nbsp; 183</p> <p>5.5 Jump Statements&nbsp;&nbsp; 190</p> <p>5.6 try Blocks and Exception Handling&nbsp;&nbsp; 193</p> <p>Chapter Summary&nbsp;&nbsp; 199</p> <p>Defined Terms&nbsp;&nbsp; 199</p>  <p><b>Chapter 6: Functions&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 201</b></p> <p>6.1 Function Basics&nbsp; 202</p> <p>6.2 Argument Passing&nbsp;&nbsp; 208</p> <p>6.3 Return Types and the return Statement&nbsp;&nbsp; 222</p> <p>6.4 Overloaded Functions&nbsp;&nbsp; 230</p> <p>6.5 Features for Specialized Uses&nbsp;&nbsp; 236</p> <p>6.6 Function Matching&nbsp;&nbsp; 242</p> <p>6.7 Pointers to Functions&nbsp;&nbsp; 247</p> <p>Chapter Summary&nbsp;&nbsp;&nbsp; 251</p> <p>Defined Terms&nbsp;&nbsp; 251</p>  <p><b>Chapter 7: Classes&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 253</b></p> <p>7.1 Defining Abstract Data Types&nbsp;&nbsp; 254</p> <p>7.2 Access Control and Encapsulation&nbsp;&nbsp; 268</p> <p>7.3 Additional Class Features&nbsp;&nbsp; 271</p> <p>7.4 Class Scope&nbsp;&nbsp;&nbsp; 282</p> <p>7.5 Constructors Revisited&nbsp;&nbsp; 288</p> <p>7.6 static Class Members&nbsp;&nbsp;&nbsp; 300</p> <p>Chapter Summary&nbsp;&nbsp; 305</p> <p>Defined Terms&nbsp;&nbsp;&nbsp; 305</p>  <p><b>Part II: The C++ Library&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 307</b></p> <p><b>Chapter 8: The IO Library&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 309</b></p> <p>8.1 The IO Classes&nbsp;&nbsp; 310</p> <p>8.2 File Input and Output&nbsp;&nbsp; 316</p> <p>8.3 string Streams&nbsp;&nbsp; 321</p> <p>Chapter Summary&nbsp;&nbsp; 324</p> <p>Defined Terms&nbsp;&nbsp;&nbsp; 324</p>  <p><b>Chapter 9: Sequential Containers&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 325</b></p> <p>9.1 Overview of the Sequential Containers&nbsp;&nbsp; 326</p> <p>9.2 Container Library Overview&nbsp;&nbsp; 328</p> <p>9.3 Sequential Container Operations&nbsp;&nbsp;&nbsp; 341</p> <p>9.4 How a vector Grows&nbsp;&nbsp; 355</p> <p>9.5 Additional string Operations&nbsp;&nbsp; 360</p> <p>9.6 Container Adaptors&nbsp;&nbsp; 368</p> <p>Chapter Summary&nbsp;&nbsp; 372</p> <p>Defined Terms&nbsp;&nbsp; 372</p>  <p><b>Chapter 10: Generic Algorithms&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 375</b></p> <p>10.1 Overview&nbsp;&nbsp; 376</p> <p>10.2 A First Look at the Algorithms&nbsp;&nbsp; 378</p> <p>10.3 Customizing Operations&nbsp;&nbsp; 385</p> <p>10.4 Revisiting Iterators&nbsp;&nbsp; 401</p> <p>10.5 Structure of Generic Algorithms&nbsp;&nbsp; 410</p> <p>10.6 Container-Specific Algorithms&nbsp;&nbsp;&nbsp; 415</p> <p>Chapter Summary&nbsp;&nbsp;&nbsp; 417</p> <p>Defined Terms&nbsp;&nbsp; 417</p>  <p><b>Chapter 11: Associative Containers&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 419</b></p> <p>11.1 Using an Associative Container&nbsp;&nbsp; 420</p> <p>11.2 Overview of the Associative Containers&nbsp;&nbsp; 423</p> <p>11.3 Operations on Associative Containers&nbsp;&nbsp; 428</p> <p>11.4 The Unordered Containers&nbsp;&nbsp; 443</p> <p>Chapter Summary&nbsp;&nbsp; 447</p> <p>Defined Terms&nbsp;&nbsp;&nbsp; 447</p>  <p><b>Chapter 12: Dynamic Memory&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 449</b></p> <p>12.1 Dynamic Memory and Smart Pointers&nbsp;&nbsp; 450</p> <p>12.2 Dynamic Arrays&nbsp;&nbsp; 476</p> <p>12.3 Using the Library: A Text-Query Program&nbsp;&nbsp; 484</p> <p>Chapter Summary&nbsp;&nbsp; 491</p> <p>Defined Terms&nbsp;&nbsp; 491</p>  <p><b>Part III: Tools for Class Authors&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 493</b></p> <p><b>Chapter 13: Copy Control&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 495</b></p> <p>13.1 Copy, Assign, and Destroy&nbsp;&nbsp; 496</p> <p>13.2 Copy Control and Resource Management&nbsp;&nbsp;&nbsp; 510</p> <p>13.3 Swap&nbsp;&nbsp; 516</p> <p>13.4 A Copy-Control Example&nbsp;&nbsp;&nbsp; 519</p> <p>13.5 Classes that Manage Dynamic Memory&nbsp;&nbsp;&nbsp; 524</p> <p>13.6 Moving Objects&nbsp;&nbsp;&nbsp; 531</p> <p>Chapter Summary&nbsp;&nbsp; 549</p> <p>Defined Terms&nbsp;&nbsp;&nbsp; 549</p>  <p><b>Chapter 14: Overloaded Operations and Conversions&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 551</b></p> <p>14.1 Basic Concepts&nbsp;&nbsp; 552</p> <p>14.2 Input and Output Operators&nbsp;&nbsp;&nbsp; 556</p> <p>14.3 Arithmetic and Relational Operators&nbsp;&nbsp; 560</p> <p>14.4 Assignment Operators&nbsp;&nbsp;&nbsp; 563</p> <p>14.5 Subscript Operator&nbsp;&nbsp;&nbsp; 564</p> <p>14.6 Increment and Decrement Operators&nbsp;&nbsp; 566</p> <p>14.7 Member Access Operators&nbsp;&nbsp; 569 </p> <p>14.8 Function-Call Operator&nbsp;&nbsp; 571</p> <p>14.9 Overloading, Conversions, and Operators&nbsp;&nbsp; 579 </p> <p>Chapter Summary&nbsp;&nbsp; 590</p> <p>Defined Terms&nbsp;&nbsp;&nbsp; 590 </p>  <p><b>Chapter 15: Object-Oriented Programming&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 591</b></p> <p>15.1 OOP: An Overview&nbsp;&nbsp;&nbsp; 592&nbsp;&nbsp; </p> <p>15.2 Defining Base and Derived Classes&nbsp;&nbsp; 594</p> <p>15.3 Virtual Functions&nbsp;&nbsp;&nbsp; 603</p> <p>15.4 Abstract Base Classes&nbsp;&nbsp;&nbsp; 608</p> <p>15.5 Access Control and Inheritance&nbsp;&nbsp;&nbsp; 511</p> <p>15.6 Class Scope under Inheritance&nbsp;&nbsp;&nbsp; 617</p> <p>15.7 Constructors and Copy Control&nbsp;&nbsp;&nbsp; 622</p> <p>15.8 Containers and Inheritance&nbsp;&nbsp;&nbsp; 630</p> <p>15.9 Text Queries Revisited&nbsp;&nbsp;&nbsp; 634</p> <p>Chapter Summary&nbsp;&nbsp;&nbsp; 649</p> <p>Defined Terms&nbsp;&nbsp; 649</p>  <p><b>Chapter 16: Templates and Generic Programming&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 651</b></p> <p>16.1 Defining a Template&nbsp;&nbsp; 652</p> <p>16.2 Template Argument Deduction&nbsp;&nbsp; 678</p> <p>16.3 Overloading and Templates&nbsp;&nbsp;&nbsp; 694</p> <p>16.4 Variadic Templates&nbsp;&nbsp; 699</p> <p>16.5 Template Specializations&nbsp;&nbsp;&nbsp; 706</p> <p>Chapter Summary&nbsp;&nbsp; 713</p> <p>Defined Terms&nbsp;&nbsp; 713</p>  <p><b>Part IV: Advanced Topics&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 715</b></p> <p><b>Chapter 17: Specialized Library Facilities&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 717</b></p> <p>17.1 The tuple Type&nbsp;&nbsp;&nbsp; 718</p> <p>17.2 The bitset Type&nbsp;&nbsp; 723</p> <p>17.3 Regular Expressions&nbsp;&nbsp; 728</p> <p>17.4 Random Numbers&nbsp;&nbsp; 745</p> <p>17.5 The IO Library Revisited&nbsp;&nbsp;&nbsp; 752</p> <p>Chapter Summary&nbsp;&nbsp;&nbsp; 769</p> <p>Defined Terms&nbsp;&nbsp;&nbsp; 769</p>  <p><b>Chapter 18: Tools for Large Programs&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 771</b></p> <p>18.1 Exception Handling&nbsp;&nbsp;&nbsp; 772</p> <p>18.2 Namespaces&nbsp;&nbsp;&nbsp; 785</p> <p>18.3 Multiple and Virtual Inheritance&nbsp;&nbsp; 802</p> <p>Chapter Summary&nbsp;&nbsp;&nbsp; 816</p> <p>Defined Terms&nbsp;&nbsp;&nbsp; 816</p>  <p><b>Chapter 19: Specialized Tools and Techniques&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 819</b></p> <p>19.1 Controlling Memory Allocation&nbsp;&nbsp; 820</p> <p>19.2 Run-Time Type Identification&nbsp;&nbsp; 825</p> <p>19.3 Enumerations&nbsp;&nbsp; 832</p> <p>19.4 Pointer to Class Member&nbsp;&nbsp;&nbsp; 835</p> <p>19.5 Nested Classes&nbsp;&nbsp; 843</p> <p>19.6 Union: A Space-Saving Class&nbsp;&nbsp;&nbsp; 847</p> <p>19.7 Local Classes&nbsp;&nbsp;&nbsp; 852</p> <p>19.8 Inherently Nonportable Features&nbsp;&nbsp;&nbsp; 854</p> <p>Chapter Summary&nbsp;&nbsp; 862</p> <p>Defined Terms&nbsp;&nbsp;&nbsp; 862</p>  <p><b>Appendix A: The Library&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 865</b></p> <p>A.1 Library Names and Headers&nbsp;&nbsp; 866</p> <p>A.2 A Brief Tour of the Algorithms&nbsp;&nbsp;&nbsp; 870</p> <p>A.3 Random Numbers&nbsp;&nbsp;&nbsp; 882</p>  <p><b>Index&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 887</b></p>  					 				 </p>
+                        <a href="#productBSS" class="ss-icon tab-accordion-content-return">&#xF500;</a>
+        </div>
+        <div id="bss5ee7e6a0-2896-4293-85db-a976142bac52" class-"bss-container">
+            <h2 class="tab-accordion-content-header">Updates</h2>
+                        <h3>Errata</h3>
+        <p><p><a href="/content/images/9780321714114/errata/9780321714114_errata_10-31-12.html">Download the errata</a></p> </p>
+                            <h3><a href="/about/contact_us/index.aspx?ContactUs_Topics_Partners_id=9d39709c-c911-4c96-ac2c-2c5a22d68ba9">Submit Errata</a></h3>
+            <a href="#productBSS" class="ss-icon tab-accordion-content-return">&#xF500;</a>
+        </div>
+    
+    <div id="bssmoreInformation" class="bss-container">
+        <h2 class="tab-accordion-content-header">More Information</h2>
+        
+        <div class="append-request-review-options-narrow" data-set="append-request-options"></div>
+        <div class="append-wish-list-narrow" data-set="append-wish-list"></div>
+
+        <a href="#productBSS" class="ss-icon tab-accordion-content-return">&#xF500;</a>
+    </div>
+    <script type="text/Javascript">
+        appendTabAjax('Reviews', 'ebf03de2-44c6-4d90-89bd-add1096ac20e', '/ProductTabs/Reviews/9780321714114');
+    </script>
+</div>
+
+
+
+<script type="text/javascript">
+    displayDefaultTab('');
+
+    $(window).resize(function() {
+        if ((document.documentElement.clientWidth > 600) && ($('#bssmoreInformation').hasClass('on'))) {
+            displayDefaultTab('');  
+        }
+    });
+</script>
+    </div>
+
+    <div id="columnTwo" class="five columns l-offset-half omega">
+        
+        <div class="append-bundles-wide" data-set="append-bundles">
+        </div>
+        
+
+
+<div class="reward-holder">
+    <div class="safari-ad safari-product">
+        <div class="safari-title--small">Unlimited one-month access with your purchase</div>
+        <img src="https://www.safaribooksonline.com/static/corp/img/brand-assets/safari-logo-lockup-sunshine.svg" alt="Free Safari Membership">
+        <div class="safari-toggle-details"><a class="safari-switch" href="javascript:void(0);">See Details</a></div>
+        <div class="safari-details" style="display:none">                       
+            <p class="safari-text--regular">Get unlimited 30-day access to over 30,000 books about UX design, leadership, project management, teams, agile development, analytics, core programming, and so much more.</p>
+        </div>
+    </div>
+</div>
+
+<script>
+    $(".safari-toggle-details").click(function(){
+    $(".safari-details").toggle(500);
+    ($(".safari-switch").text() === "See Details") ? $(".safari-switch").text("Hide Details") : $(".safari-switch").text("See Details");
+    });
+</script>             <div class="append-related-narrow" data-set="append-related"></div>
+            <!-- Begin repositioned .copies -->
+                <div class="append-request-review-options-wide" data-set="append-request-options">
+                    <ul class="copies">
+                            <li>
+                                Request an
+                                <a href="https://www.pearsonhighered.com/product?ISBN=9780321714114">Instructor</a>
+                                or
+                                <a href="/store/media_review.aspx">Media</a>
+                                review copy.
+                            </li>
+                                                    <li>
+                                <a href="/store/sales.aspx">Corporate, Academic, and Employee Purchases</a>
+                            </li>
+                                                    <li>
+                                <a href="/store/international.aspx">International Buying Options</a>
+                            </li>
+                    </ul>
+                </div>
+        <div class="append-related-wide" data-set="append-related">
+
+    <div class="buckets-other cf">
+        <h3 class="buckets-other-heading">Other Things You Might Like</h3>
+            <div class="buckets-image-51 cf">
+                <a href="/store/c-plus-plus-in-24-hours-sams-teach-yourself-9780672337468?w_ptgrevartcl=C%2b%2b+in+24+Hours%2c+Sams+Teach+Yourself_2302057">
+                    <img src="/ShowCover.aspx?isbn=0672337460&type=e" alt="C++ in 24 Hours, Sams Teach Yourself" class="product" />
+                </a>
+                <p class="buckets-other-title m-b-quarter">
+                    <a href="/store/c-plus-plus-in-24-hours-sams-teach-yourself-9780672337468" class="title">
+                        C++ in 24 Hours, Sams Teach Yourself, 6th Edition
+                    </a>
+                </p>
+                <ul class="buckets-list left">
+                    <li class="buckets-image-51-author">
+                        By <a href="/authors/bio/cd56b63e-67e7-41a1-a0d9-a21fef245306">Rogers Cadenhead</a>, <a href="/authors/bio/1ce93b60-cd45-4b08-8933-0f89d072c4fa">Jesse Liberty</a>
+                    </li>
+                    <li class="buckets-image-51-price">
+                        Book 
+                        $27.99                        
+                    </li>
+                </ul>
+            </div>
+            <div class="buckets-image-51 cf">
+<div class='productCover'>                <a href="/store/c-plus-plus-in-24-hours-sams-teach-yourself-9780134192574?w_ptgrevartcl=C%2b%2b+in+24+Hours%2c+Sams+Teach+Yourself_2302071">
+                    <img src="/ShowCover.aspx?isbn=0134192575&type=e" alt="C++ in 24 Hours, Sams Teach Yourself" class="product" />
+                </a>
+</div>                <p class="buckets-other-title m-b-quarter">
+                    <a href="/store/c-plus-plus-in-24-hours-sams-teach-yourself-9780134192574" class="title">
+                        C++ in 24 Hours, Sams Teach Yourself, 6th Edition
+                    </a>
+                </p>
+                <ul class="buckets-list left">
+                    <li class="buckets-image-51-author">
+                        By <a href="/authors/bio/cd56b63e-67e7-41a1-a0d9-a21fef245306">Rogers Cadenhead</a>, <a href="/authors/bio/1ce93b60-cd45-4b08-8933-0f89d072c4fa">Jesse Liberty</a>
+                    </li>
+                    <li class="buckets-image-51-price">
+                        eBook (Watermarked) 
+                        $22.39                        
+                    </li>
+                </ul>
+            </div>
+            <div class="buckets-image-51 cf">
+                <a href="/store/c-plus-plus-how-to-program-plus-myprogramminglab-with-9780134583006?w_ptgrevartcl=C%2b%2b+How+to+Program+Plus+MyProgrammingLab+with+Pearson+eText+--+Access+Card+Package_2491993">
+                    <img src="/ShowCover.aspx?isbn=0134583000&type=e" alt="C++ How to Program Plus MyProgrammingLab with Pearson eText -- Access Card Package" class="product" />
+                </a>
+                <p class="buckets-other-title m-b-quarter">
+                    <a href="/store/c-plus-plus-how-to-program-plus-myprogramminglab-with-9780134583006" class="title">
+                        C++ How to Program Plus MyProgrammingLab with Pearson eText -- Access Card Package, 10th Edition
+                    </a>
+                </p>
+                <ul class="buckets-list left">
+                    <li class="buckets-image-51-author">
+                        By <a href="/authors/bio/d476752d-c525-4dd3-95c5-49aabbf3ceb2">Paul Deitel</a>, <a href="/authors/bio/bc2896da-50b1-4867-bbc9-f4abe2fbe12a">Harvey Deitel</a>
+                    </li>
+                    <li class="buckets-image-51-price">
+                        Book 
+                        $154.02                        
+                    </li>
+                </ul>
+            </div>
+    </div>
+
+        </div>
+
+            <script type="text/javascript" src="/display/common/javascript/salecycle.js"></script>
+    </div>
+</div>
+    <script type="text/javascript" src="//tags.mediaforge.com/js/1723/?prodID=9780321714114"></script>
+<div id="header"><div class="cranium"><div class="branding"><div id="hLogo"><a href="/" accesskey="0" title="Home" class="logo"><!--[if lte IE 8]><img src="/display/informIT/images/header/informit.png" alt="InformIT" /><![endif]--></a></div></div><div class="tagline">the trusted technology learning source</div><a href="#menu" class="menu-link ss-icon"></a><div id="headerLinks" class="clearfix">
+                   
+    <div id="cartLink" class="headerLink c">
+        <span class="bighead ss-icon">&#xE500;</span>
+        <a href="https://memberservices.informit.com/cart/buy.aspx?partner=53">
+            <span class="bighead">View </span>Your Cart
+        </a>
+    </div>
+
+    <div class="hi">
+            <a href="https://memberservices.informit.com/my_account/login.aspx?partner=53">Account Sign In</a>
+    </div>
+
+              <form name="headersearchform" id="headersearchform" class="s" method="GET" action="/search/index.aspx" xmlns:msxsl="urn:schemas-microsoft-com:xslt"><label for="headersearchform">Search</label><input onfocus="checkClear(this,'Search');" type="text" name="query" id="query" value="Search" /><input type="submit" id="searchbutton" class="ss-icon" value="🔎" /></form></div></div></div><div id="siteNav"><div class="cranium clearfix"><ul id="nav"><li class="mobile search"><form name="headersearchform" id="headersearchform" class="s" method="GET" action="/search/index.aspx" xmlns:msxsl="urn:schemas-microsoft-com:xslt"><label for="headersearchform">Search</label><input onfocus="checkClear(this,'Search');" type="text" name="query" id="query" value="Search" /><input type="submit" id="searchbutton" class="ss-icon" value="🔎" /></form></li>
+                
+    <li class="mobile">
+        <a href="https://memberservices.informit.com/cart/buy.aspx?partner=53">
+            <span class="ss-icon cart">&#xE500; </span> View Your Cart
+        </a>
+    </li>
+
+    <li class="mobile">
+        <a href="https://memberservices.informit.com/my_account/login.aspx?partner=53">
+            <span class="ss-icon">&#x1F464;</span> Account Sign In
+        </a>
+    </li>
+    <li class="mobile">
+        <a href="https://memberservices.informit.com/my_account/register.aspx?partner=53">Create Account</a>
+    </li>
+
+              <li><a class="arrow" href="/topics/">Topics</a><ul class="column1 sib"><li><a href="/topics/topic.aspx?st=61443">
+                        Business &amp; Management
+                      </a></li><li><a href="/topics/topic.aspx?st=61444">Certification</a></li><li><a href="/topics/topic.aspx?st=98420">
+                        Cloud Computing &amp; Virtualization
+                      </a></li><li><a href="/topics/topic.aspx?st=61446">Data</a></li><li><a href="/topics/topic.aspx?st=61447">Engineering</a></li><li><a href="/topics/topic.aspx?st=61449">
+                        Graphics &amp; Web Design
+                      </a></li><li><a href="/topics/topic.aspx?st=61450">Hardware</a></li><li><a href="/topics/topic.aspx?st=61451">
+                        Home &amp; Office Computing
+                      </a></li><li><a href="/topics/topic.aspx?st=61452">Information Technology</a></li></ul><ul class="column2 sib"><li><a href="/topics/topic.aspx?st=98422">
+                        Mobile Application Development &amp; Programming
+                      </a></li><li><a href="/topics/topic.aspx?st=61453">Networking</a></li><li><a href="/topics/topic.aspx?st=66399">Open Source</a></li><li><a href="/topics/topic.aspx?st=61454">Operating Systems, Server</a></li><li><a href="/topics/topic.aspx?st=61455">Process Improvement</a></li><li><a href="/topics/topic.aspx?st=61456">Programming</a></li><li><a href="/topics/topic.aspx?st=61457">Security</a></li><li><a href="/topics/topic.aspx?st=61458">
+                        Software Development &amp; Management
+                      </a></li><li><a href="/topics/topic.aspx?st=61459">Web Development</a></li><li><a href="/topics/topic.aspx?st=61460">Web Services</a></li></ul></li><li><a class="arrow" href="/store/">Store</a><ul><li><a href="/store/browse/books">Books</a></li><li><a href="/store/browse/ebooks">eBooks</a></li><li><a href="/store/browse/practice-tests">Practice Tests</a></li><li><a href="/store/browse/software">Software</a></li><li><a href="/store/browse/video">Video</a></li><li><a href="/store/browse/web-editions">Web Editions</a></li></ul></li><li><a href="/authors/">Authors</a></li><li><a href="https://www.safaribooksonline.com/?utm_source=informit&amp;utm_medium=referral&amp;utm_campaign=publisher&amp;utm_content=global+top+nav">Safari</a></li><li><a class="arrow" href="/imprint/">Imprints</a><ul class="imprints"><li><a href="/imprint/index.aspx?st=61085">Addison-Wesley Professional</a></li><li><a href="http://www.ciscopress.com">Cisco Press</a></li><li><a href="http://www.ibmpressbooks.com">IBM Press</a></li><li><a href="http://www.pearsonitcertification.com">Pearson IT Certification</a></li><li><a href="/imprint/index.aspx?st=61089">Prentice Hall Professional</a></li><li><a href="http://www.quepublishing.com">Que Publishing</a></li><li><a href="/imprint/index.aspx?st=61091">Sams Publishing</a></li><li><a href="http://www.pearsonitcertification.com/promotions/vmware-press-138356">VMware Press</a></li></ul></li><li><a class="arrow" href="/explore/">Explore</a><ul class="last"><li><a href="/about/">About</a></li><li><a href="/affiliates/">Affiliates</a></li><li><a href="/articles/">Articles</a></li><li><a href="/blogs/">Blogs</a></li><li><a href="/promotions/informits-community-resource-center-139745">Community</a></li><li><a href="/promotions/">Deals and Promotions</a></li><li><a href="/newsletters/">Newsletters</a></li><li><a href="/press/">Press</a></li><li><a href="/user_groups/">User Groups</a></li></ul></li></ul></div></div><div id="footer"><ul class="links"><li><a href="/about/">About</a></li><li><a href="/affiliates/">Affiliates</a></li><li><a href="/about/contact_us/">Contact Us</a></li><li><a href="/about/jobs.aspx">Jobs</a></li><li><a href="/about/legal.aspx">Legal Notice</a></li><li><a href="/about/privacy.aspx">Privacy Policy</a></li><li><a href="/press/">Press</a></li><li><a href="/promotions/">Promotions</a></li><li><a href="/site_map/">Site Map</a></li><li><a href="/about/write_for_us.aspx">Write for Us</a></li></ul><div itemscope="itemscope" itemtype="http://schema.org/Corporation">
+          ©  2016 Pearson Education, <span itemprop="name">Informit</span>. All rights reserved.<br /><div itemprop="address" itemscope="itemscope" itemtype="http://schema.org/PostalAddress"><span itemprop="streetAddress">800 East 96th Street</span>, <span itemprop="addressLocality">Indianapolis</span>, <span itemprop="addressRegion">Indiana </span><span itemprop="postalCode">46240</span></div></div></div><div id="strap"><div class="cranium"><div id="pearsonTopLogoLink"></div><div id="pearsonAlwaysLearningImage"></div></div></div><!--Google analytics--><script>
+        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function()
+        { (i[r].q=i[r].q||[]).push(arguments)}
+        ,i[r].l=1*new Date();a=s.createElement(o),
+        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+        })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+        ga('create', 'UA-433761-6', 'auto', {'allowLinker': true});
+        ga('require', 'linker');
+        
+        ga('linker:autoLink', ['www.informit.com', 'memberservices.informit.com']);
+        ga('send', 'pageview');
+      </script><script type="text/JavaScript" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+            setTimeout(function(){var a=document.createElement("script");
+            var b=document.getElementsByTagName("script")[0];
+            a.src=document.location.protocol+"//dnn506yrbagrg.cloudfront.net/pages/scripts/0018/4148.js?"+Math.floor(new Date().getTime()/3600000);
+            a.async=true;a.type="text/javascript";b.parentNode.insertBefore(a,b)}, 1);
+        </script></div><script type="text/javascript" xmlns:msxsl="urn:schemas-microsoft-com:xslt">_satellite.pageBottom();</script></body></html>
