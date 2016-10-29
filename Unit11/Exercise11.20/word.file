@@ -1,0 +1,12 @@
+#INCLUDE #INCLUDE 
+#include
+#include 
+#include 
+
+using ifstream;
+using string;
+using map;
+using cin;
+using endl;
+using cout;
+cin

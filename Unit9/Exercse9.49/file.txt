@@ -1,0 +1,41 @@
+#include <vector>
+#include <string>
+#include <iostream>
+#include <iterator>
+#include <fstream>
+
+using std::vector;
+using std::string;
+using std::ifstream;
+using std::cout;
+using std::endl;
+using std::cin;
+
+int main(int argc, char const *argv[])
+{
+	ifstream if("file.txt");
+
+	string ascender("bdhklt");
+	string descender("gjpqy");
+
+	string word,result;
+	while(if >> word)
+	{
+		if(word.find_first_of(ascender) == string::npos && word.find_first_of(descender) == string::npos)
+		{
+			if(word.size() > result.size())
+			{
+				result = word;
+			}
+		}
+	}
+
+	if(result.empty())
+	{
+		cout << "Error: no word!" << endl;
+	}else
+	{
+		cout << "result :" << result << endl;
+	}
+	return 0;
+}

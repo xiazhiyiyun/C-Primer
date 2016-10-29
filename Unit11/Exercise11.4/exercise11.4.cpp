@@ -1,0 +1,54 @@
+#include <iostream>
+#include <fstream>
+#include <iterator>
+#include <string>
+#include <algorithm>
+#include <cctype>
+#include <map>
+#include <set>
+
+using std::ifstream;
+using std::string;
+using std::back_inserter;
+using std::map;
+using std::set;
+using std::cin;
+using std::endl;
+using std::cout;
+
+int main(int argc, char const *argv[])
+{
+	ifstream in("word.file");
+	if(!in)
+	{
+		return  -1;
+	}
+
+	set<char> notIn{',',';','.','/',':','?'};
+
+	map<string,size_t> words;
+	
+	string word;
+
+	while(in >> word)
+	{
+		string sWord;
+		transform(word.begin(),word.end(),back_inserter(sWord),tolower);
+
+		while( !sWord.empty()  &&  notIn.count(sWord.back()) )
+		{
+			sWord.pop_back();
+			// cout << sWord << endl;
+		}
+
+		++words[sWord];
+	}
+
+	in.close();
+
+	for(auto it = words.begin(); it != words.end(); ++it)
+	{
+		cout << it->first << " occurs " << it->second << " times!" << endl;
+	}
+	return 0;
+}

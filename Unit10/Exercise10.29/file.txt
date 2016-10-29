@@ -1,0 +1,10 @@
+Desktop
+Documents
+Downloads
+examples.desktop
+Music
+Pictures
+Public
+Summer
+Templates
+Videos
